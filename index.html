@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="{{ url_for('static', filename='css/imag/logo (2).png') }}" alt="Logo">
+            <span>Aira - The Gesture Genie</span>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="head"> <h1>Gesture Genie</h1></div>  
+       
+    <div class="container"> 
+        
+            <div class="avatar-video">
+                <video controls autoplay loop muted>
+                    <source src="{{ url_for('static', filename='css/videos/introN.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="assistant-text">
+                <h1>Hello, I am Aira, your sign language assistant</h1>
+            </div>
+         </div>
+            
+        <p>Sign language, any means of communication through bodily movements, especially of the hands and arms, 
+            used when spoken communication is impossible or not desirable.
+             The practice is probably older than speech. 
+             Sign language may be as coarsely expressed as mere grimaces, shrugs, or pointings;
+              or it may employ a delicately nuanced combination of coded manual signals reinforced by
+               facial expression and perhaps augmented by words spelled out in a manual alphabet.
+                Wherever vocal communication is impossible, as between speakers of mutually unintelligible languages
+             or when one or more would-be communicators is deaf, sign language can be used to bridge the gap.
+        </p>
+        </div>
+        <div class="hand"><img src="static/css/imag/hands.jpg"></div>
+        
+        <hr>
+        <div class="para2">
+            <div class="para21">
+                Sign language is a visual means of communication that uses hand gestures, facial expressions, and body movements to convey meaning. Here are some key uses and aspects of sign language:
+                <ol>
+                <li><strong> Communication for the Deaf and Hard of Hearing: </strong>Sign language is primarily used by individuals who are deaf or hard of hearing as their primary mode of communication. It allows them to express thoughts, ideas, and emotions effectively.
+                </li>
+                <li><strong> Accessibility: </strong>It serves as a vital tool for accessibility, enabling communication between deaf individuals, and between deaf and hearing individuals who have learned sign language.
+                </li>
+                <li><strong> Cultural Identity: </strong>Sign languages often have regional variations and are integral to deaf culture. They provide a sense of identity and community among deaf people.
+                </li>
+                <li><strong> Education: </strong>Sign language is used in educational settings for deaf students, facilitating learning and social interaction.
+                </li>
+                <li><strong> Legal and Official Recognition:</strong> In many countries, sign languages are recognized as official languages, ensuring access to services and rights for deaf individuals.
+                </li>
+                <li><strong> Interpreter Services:</strong> Professional sign language interpreters facilitate communication between deaf and hearing individuals in various settings such as conferences, medical appointments, and legal proceedings.
+                </li>
+                <li><strong> Artistic Expression:</strong> Sign language can be expressive and artistic, used in performances such as storytelling, poetry, and theater.
+                </li>
+                <li><strong> Emergency Situations:</strong> In emergencies where verbal communication is hindered (e.g., loud environments or when silence is required), sign language can be crucial for effective communication.
+                </li>
+                </ol>
+            </div>
+            <div class="para22"><img src="static/css/imag/img1.jpg" class="small-image"></div>
+        </div>
+
+        
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" id="video-feed">
+        </div>
+        <div>
+        </div>    
+    </div>
+    <hr>
+    <div class="para4">
+        <h1>Feeling difficlut or new to Sign-Language?</h1>
+        <div class="link">Learn Sign languaage from <a href="https://www.wired.com/story/how-to-learn-sign-language-free/">here</a></div>
+        <div class="para3">
+            <div class="para32" id="myVideo"> 
+                <video id="myVideo" width="900" controls autoplay loop muted>
+                    <source src="{{ url_for('static', filename='css/videos/video.mp4') }}" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video> </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
